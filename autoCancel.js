@@ -39,7 +39,7 @@ function monitorNewBookings() {
       const timeout = setTimeout(() => {
         cancelBooking(bookingId, bookingData);
         activeTimers.delete(bookingId);
-      }, 5000); // 5 seconds
+      }, 30000); // 5 seconds
 
       activeTimers.set(bookingId, timeout);
     }
